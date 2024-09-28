@@ -1,0 +1,3 @@
+       
+       01 FILENAME-FILE-STATUS PIC X(3).
+           88 FILENAME-EOF VALUE "EOF".
