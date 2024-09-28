@@ -13,7 +13,7 @@
 
        FILE SECTION.
        FD MY-FILE
-           DATA RECORD IS LOCAL-FILE-RECORD.
+           DATA RECORD IS WS-FILE-RECORD.
 
        WORKING-STORAGE SECTION.
 
@@ -35,7 +35,7 @@
        
        FILE-HANDLING SECTION.
 
-           EVALUATE OPERATION
+           EVALUATE TRUE
                WHEN F-OPEN
                    PERFORM OPEN-FILE
                WHEN F-CLOSE
@@ -52,7 +52,7 @@
        
        OPEN-FILE SECTION.
            
-           EVALUATE OPEN-MODE
+           EVALUATE TRUE
                WHEN READ-MODE
                    OPEN INPUT MY-FILE
                WHEN WRITE-MODE
